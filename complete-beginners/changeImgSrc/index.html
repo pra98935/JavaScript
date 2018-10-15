@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="main.js" /></script>
+    
 </head>
 <body>
     <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="img" id="imgPath" width="400" height="400">
     <button id="btn">Change Image</button>
 </body>
 <footer>
-    <!-- <script src="main.js" /> -->
+    
     <script>
-        window.onload = function(){
-            var myImg = document.querySelector('#imgPath');
-            element = document.getElementById('btn');
-            element.onclick = function(){
-                getSrc = myImg.getAttribute('src');
-                if(getSrc == 'https://www.w3schools.com/w3images/fjords.jpg'){
-                    myImg.setAttribute('src', 'https://freerangestock.com/sample/39010/into-thin-air--base-jumping-off-trolltunga--extreme-sports-in-norway.jpg');
-                }else{
-                    myImg.setAttribute('src', 'https://www.w3schools.com/w3images/fjords.jpg');
-                }
-            }
-        }
+        // window.onload = function(){
+        //     var myImg = document.querySelector('#imgPath');
+        //     element = document.getElementById('btn');
+        //     element.onclick = function(){
+        //         getSrc = myImg.getAttribute('src');
+        //         if(getSrc == 'https://www.w3schools.com/w3images/fjords.jpg'){
+        //             myImg.setAttribute('src', 'https://freerangestock.com/sample/39010/into-thin-air--base-jumping-off-trolltunga--extreme-sports-in-norway.jpg');
+        //         }else{
+        //             myImg.setAttribute('src', 'https://www.w3schools.com/w3images/fjords.jpg');
+        //         }
+        //     }
+        // }
     </script>
 </footer>
 </html>
