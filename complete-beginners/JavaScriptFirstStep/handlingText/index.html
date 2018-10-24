@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ 
+ <script>
+    document.write('<h1>Creating String</h1>'); 
+    let name = 'prashant';
+    let lname = "shrivastava";
+    document.write(name);
+    document.write('<br/>');
+    document.write(lname);
+
+    document.write('<h1>Single quotes vs. double quotes</h1>'); 
+    let string1 = 'Would you eat a "fish supper"?';
+    let string2 = "I'm feeling blue.";
+    document.write(string1);
+    document.write('<br/>');
+    document.write(string2);
+
+    document.write('<h1>Escaping characters in a string</h1>'); 
+    let string3 = 'I\'m Would you eat a fish supper?';
+    let string4 = "I'm feeling blue.";
+    let string5 = 'prashant I\'m sum 9+9';
+    document.write('Escaping characters means that we do something to them to make sure they are recognized as text, not part of the code.')
+    document.write('<br/>');
+    document.write(string3);
+    document.write('<br/>');
+    document.write(string5);
+
+    document.write('<h1>Concatenating strings</h1>'); 
+    let fname = 'prashant';
+    let lastname = 'shrivastava';
+    let fullname = fname +' '+ lastname;
+    document.write(fullname);
+    document.write('<br/>');
+
+    document.write('<h1>Number vs Strings</h1>');
+    document.write(5 + 10);
+    document.write('<br/>');
+    document.write('5' + 10);
+    document.write('<br/>');
+    document.write(5 + '10');
+    document.write('<br/>');
+    document.write(5 - '10');
+    document.write('<br/>');
+    document.write('5' - 10);
+    document.write('<br/>');
+    document.write(typeof(4));
+    document.write('<br/>');
+    document.write(typeof(fullname));
+    document.write('<br/>');
+    document.write(typeof('5'+5));
+    
+
+ </script>
+</body>
+</html>
