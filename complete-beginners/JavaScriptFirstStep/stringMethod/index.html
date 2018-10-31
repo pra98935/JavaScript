@@ -9,15 +9,38 @@
 <body>
     <script>
         document.write('<h1>string method</h1>');
-        let name = 'prashant';
+        name = 'prashant';
         
-        document.write('Length:-'+ name.length); // String length
+        document.write('Length = '+ name.length); // String length
         document.write('<br/>');
 
-        document.write('Get Char:-'+name[0]); // Get character
+        document.write('Get Char = '+name[0]); // Get character
+        document.write('<br/>');
+
+        document.write('Get last Char = '+name[name.length-1]); // Last Char
         document.write('<br/>');
         
-        document.write(name.indexOf('ash')); // You will get position number 2 (0-p, 1-r, 2-a)
+        document.write('Position = '+name.indexOf('q')); // You will get position number -1 (0-p, 1-r, 2-a)
+        document.write('<br/>');
+
+        document.write('Position = '+name.indexOf('a')); // You will get position number 2 (0-p, 1-r, 2-a)
+        document.write('<br/>');
+
+        document.write(name.toLowerCase()); // Lower Case
+        document.write('<br/>');
+
+        document.write(name.toUpperCase()); // Upper Case
+        document.write('<br/>');
+        
+        newWord = name.replace('pra', 'abc'); // Replace word
+        document.write(newWord); 
+        document.write('<br/>');
+
+        document.write(name.slice(2)); // from where string should be start
+        document.write('<br/>');
+        document.write(name.slice(1, 3)); // first parameter:- start position, second parameter:- end position but will not include
+
+
     </script>
 </body>
 </html>
