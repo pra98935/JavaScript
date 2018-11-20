@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript">
+        var person = {
+            name : ['prashant', 'shrivastava'],
+            age : 27,
+            gender : 'male',
+            hobby:{
+                hobby1:'dance',
+                hobby2:'swimimg'
+            },
+            fullName:function(){
+                return this.name[0]+ ' ' +this.name[1];
+            },
+            allHobby:function(){ // Dot notation
+                return this.hobby.hobby1+ ' ' +this.hobby.hobby2;
+            },
+            allHobby1:function(){ // Bracket notation
+                return this.hobby['hobby1']+ ' ' +this.hobby['hobby2'];
+            }
+        }
+
+        // Before Update Object
+        console.log(person['age']);
+        console.log(person.fullName());
+        console.log(person.allHobby());
+        console.log(person.allHobby1());
+        
+        // After Update Object
+        person['age'] = 28;
+        console.log(person['age']);
+
+        person.name = ['prashant111111', 'shrivastava'];
+        console.log(person.fullName());
+
+        person.hobby={
+            hobby1:'dance111',
+            hobby2:'swimimg2222'
+        };
+        console.log(person.allHobby());
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

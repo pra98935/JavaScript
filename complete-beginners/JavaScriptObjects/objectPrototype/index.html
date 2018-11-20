@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function person(first, last, age, gender, hobby){ // This is constructor function
+            this.name = {
+                firstName:first,
+                lastName:last
+            },
+            this.age = age,
+            this.gender = gender,
+            this.hobby = hobby,
+            this.fullname = function(){
+                return this.name.firstName + ' ' + this.name.lastName;
+            }
+        }
+        // new person('prashant', 'kumar', 27, 'male', ['dance', 'singing']) // Calling constructor function with keyword new
+        var person1 = new person('prashant', 'kumar', 27, 'male', ['dance', 'singing']); //  here var person1 is my Object of person() constructor.
+        person.prototype.greet = function(){
+            return 'Hello ' + this.name.firstName;
+        }
+        console.log(person1.greet());
+
+        console.log(person1.constructor.name) // Get Constructor name
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // start Array Declare
+        console.log('Creating an array');
+        var arr1 = [10,20,30];
+        console.log(arr1);
+
+        var arr2 = ['prashant', 50, ['shri', 10, 20]];
+        console.log(arr2);
+        // end Array Declare
+
+
+        // Start Accessing and modifying array items
+        console.log('Start Accessing and modifying array items');
+        var arr3 = ['prashant', 50, ['shri', 10, 20]];
+        console.log(arr3);
+        console.log(arr3[0]); // get value from array
+        console.log(arr3[2][0]); // get value from array
+
+        arr3[0]='sameer'; // modify array
+        console.log(arr3); // new modified array
+        // End Accessing and modifying array items
+
+        // start Finding the length of an array
+        console.log('start Finding the length of an array');
+        var arr4 = [1, 5, 2];
+        console.log('array length '+arr4.length);
+        for (i=0; i<arr4.length; i++){
+            console.log(arr4[i]);
+        }
+        // end Finding the length of an array
+
+        // start Converting between strings and arrays
+        console.log('Converting between strings and arrays');
+        var str = 'prashant,gwalior,27';
+        var strtoarr = str.split(','); // string to array
+        console.log(strtoarr);
+
+        var joinarr = strtoarr.join('*'); // convert array in string, and can use any seprator
+        console.log(joinarr);
+
+        var stringarr = strtoarr.toString(); // no parameter, will always use coma seprator
+        console.log(stringarr);
+        // end Converting between strings and arrays
+        
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

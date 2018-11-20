@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        document.write("<h3>With the basics out of the way, we'll now focus on object-oriented JavaScript (OOJS) — this article presents a basic view of object-oriented programming (OOP) theory, then explores how JavaScript emulates object classes via constructor functions, and how to create object instances.</h3>");
+        document.write("<h3>process of creating an object instance from a class is called instantiation</h3>");
+
+        function person(first, last, age, gender, hobby){ // This is constructor function
+            this.name = {
+                firstName:first,
+                lastName:last
+            },
+            this.age = age,
+            this.gender = gender,
+            this.hobby = hobby,
+            this.fullname = function(){
+                return this.name.firstName + ' ' + this.name.lastName;
+            }
+        }
+
+        // new person('prashant', 'kumar', 27, 'male', ['dance', 'singing']) // Calling constructor function with keyword new
+        var person1 = new person('prashant', 'kumar', 27, 'male', ['dance', 'singing']) //  here var person1 is my Object of person() constructor.
+        console.log(person1.age);
+        console.log(person1.gender);
+        console.log(person1.hobby[0]);
+        console.log(person1.hobby[1]);
+        console.log(person1.fullname());
+
+        
+    </script>
+</head>
+<body>
+        <h1>Constructor</h1>
+        <div class="ui_qtext_expanded"><span class="ui_qtext_rendered_qtext"><p class="ui_qtext_para">Constructor is used to create an Object, with some values or can be a default/empty constructor in a OOP Language</p><p class="ui_qtext_para">Now in javascript a constructor is used when you are doing or working with Prototype objects or Object Oriented Javascript. it can be viewed as a normal function which initializes a value or sets the default values.</p><p class="ui_qtext_para">Eg</p><p class="ui_qtext_para">function person(first, last, age, eye) {<br>&nbsp;this.firstName = first;<br>&nbsp;this.lastName = last;<br>&nbsp;this.age = age;<br>&nbsp;this.eyeColor = eye;<br>}</p><p class="ui_qtext_para">var myFather = new person("John", "Doe", 50, "blue");<br>var myMother = new person("Sally", "Rally", 48, "green");</p><p class="ui_qtext_para">So in the above Eg : person(first, last, age, eye) is your Constructor Function.</p><p class="ui_qtext_para">new person("John", "Doe", 50, "blue") - in this line we are calling the Constructor function with a “new” keyword which creates an Object of the Constructor.</p><p class="ui_qtext_para">and Finally</p><p class="ui_qtext_para">var myFather = new person("John", "Doe", 50, "blue"); - here var myFather is my Object of person() constructor.</p><p class="ui_qtext_para">Hope this helps You :)</p><p class="ui_qtext_para">Links</p><p class="ui_qtext_para"><span class="qlink_container"><a href="http://www.w3schools.com/js/js_object_definition.asp" rel="noopener nofollow" target="_blank" onclick="return Q.openUrl(this, 31704148);" class="external_link" data-qt-tooltip="w3schools.com">JavaScript Objects</a></span></p><p class="ui_qtext_para"><span class="qlink_container"><a href="http://www.w3schools.com/js/js_object_prototypes.asp" rel="noopener nofollow" target="_blank" onclick="return Q.openUrl(this, 31704148);" class="external_link" data-qt-tooltip="w3schools.com">JavaScript Prototypes</a></span></p><p class="ui_qtext_para"><span class="qlink_container"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" rel="noopener nofollow" target="_blank" onclick="return Q.openUrl(this, 31704148);" class="external_link" data-qt-tooltip="mozilla.org">Object.prototype.constructor</a></span></p></span></div>
+
+</body>
+</html>
